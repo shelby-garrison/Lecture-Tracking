@@ -12,9 +12,9 @@ A web application to track and resume video playback progress for users. Built u
 - ✅ Dynamic progress bar UI
 
 
-**Note:** The `sample.mp4` file located at `public/videos/sample.mp4` has not been uploaded to this repository due to its large file size.  
-You can add your own video named `sample.mp4` to the `public/videos/` folder or update the source path in `lecture.ejs` accordingly.
+Note: The sample.mp4 file located in public/videos/ is a trimmed version of the original lecture video due to size constraints. As a result, you may observe a significant increase in progress even after watching just a few seconds. This behavior is expected and does not indicate any issue with the tracking logic or application functionality. 
 
+**REFER TO RECORDED DEMO VIDEO FOR DETAILED WALKTHROUGH OF PROJECT**
 
 ## 🛠️ Tech Stack
 
