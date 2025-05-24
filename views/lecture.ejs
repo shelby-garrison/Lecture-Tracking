@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lecture Video</title>
+  <script>
+    const USER_ID = String('<%= userId %>');
+    const VIDEO_ID = String('<%= videoId %>');
+    const LAST_POSITION = Number('<%= lastPosition || 0 %>');
+    const VIDEO_DURATION = Number('<%= VIDEO_DURATION || 0 %>');
+    const watchedIntervals = JSON.parse('<%- JSON.stringify(intervals || []) %>');
+  </script>
+
+
+  <script defer src="/js/player.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center px-4 py-10">
+  <div class="w-full max-w-3xl bg-white shadow-lg rounded-lg p-6">
+    <h1 class="text-2xl font-bold mb-4 text-gray-800">Lecture Video</h1>
+
+    <video id="videoPlayer" class="w-full rounded-lg" controls>
+      <source src="/videos/sample.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="mt-4">
+      <div class="w-full bg-gray-200 h-3 rounded-full overflow-hidden">
+        <div id="progressBar" class="bg-blue-500 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+      </div>
+      <p class="text-sm text-gray-600 mt-2">Progress: <span id="progressText">0%</span></p>
+    </div>
+  </div>
+</body>
+</html>
