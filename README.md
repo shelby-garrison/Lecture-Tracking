@@ -12,26 +12,6 @@ A web application to track and resume video playback progress for users. Built u
 - ✅ Dynamic progress bar UI
 
 
-## 📁 Directory Structure
-
-Lecture-Tracking/
-├── app.js
-├── .env
-├── controllers/
-│   └── videoController.js
-├── models/
-│   └── Progress.js
-├── routes/
-│   └── videoRoutes.js
-├── views/
-│   └── lecture.ejs
-├── public/
-│   └── js/
-│       └── player.js
-|   └── videos/
-│       └── sample.mp4
-
-
 **Note:** The `sample.mp4` file located at `public/videos/sample.mp4` has not been uploaded to this repository due to its large file size.  
 You can add your own video named `sample.mp4` to the `public/videos/` folder or update the source path in `lecture.ejs` accordingly.
 
