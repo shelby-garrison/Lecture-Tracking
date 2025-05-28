@@ -12,7 +12,7 @@ A web application to track and resume video playback progress for users. Built u
 - ✅ Dynamic progress bar UI
 
 
-Note: The sample.mp4 file located in public/videos/ is a trimmed version of the original lecture video due to size constraints. As a result, you may observe a significant increase in progress even after watching just a few seconds. This behavior is expected and does not indicate any issue with the tracking logic or application functionality. 
+Note: The sample.mp4 file located in public/videos/ is a trimmed version of the original lecture video due to size constraints. As a result, you may observe a significant increase in progress even after watching just a few seconds of the lecture. This behaviour is expected and does not indicate any issue with the tracking logic or application functionality. 
 
 **REFER TO RECORDED DEMO VIDEO FOR DETAILED WALKTHROUGH OF PROJECT**
 
@@ -41,7 +41,7 @@ Create a `.env` file in the root:
 ```env
 PORT=3000
 MONGO_URI=mongodb://localhost:27017/yourdbname
-        mongodb://host.docker.internal:27017/yourdbname (IF USING DOCKER)
+          mongodb://host.docker.internal:27017/yourdbname (IF USING DOCKER)
 ```
 
 ###  Run MongoDB
